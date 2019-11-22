@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hip-Hop Hangman</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<!--function to be run when the body loads up-->
+<body onload="startUp()">
+    
+    <!--creating the audio elements -->
+    <audio id="tupac">
+        <source src="assets/sounds/dearmama.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="outkast">
+        <source src="assets/sounds/msjackson.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="redman">
+        <source src="assets/sounds/cantwait.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="eminem">
+        <source src="assets/sounds/loseyourself.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="wu">
+        <source src="assets/sounds/cream.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="krs">
+        <source src="assets/sounds/soundofdapolice.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="rakim">
+        <source src="assets/sounds/joke.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="mobb">
+        <source src="assets/sounds/shook.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="pe">
+        <source src="assets/sounds/noise.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="dmx">
+        <source src="assets/sounds/ruff.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <div id="allcontent">
+
+        <header>
+            <br>
+            <center>
+                <img src="assets/images/hangman.png">
+            </center>
+        </header>
+
+        <main>
+
+            <p id="preptext">You guessed:</p>
+            <p id="winnertitle">No one yet...let's go, yo!</p>
+
+            <!--left div, where the picture and artist bio will go -->
+            <div class="left-side">
+
+                <div id="artist-image"></div>
+
+            </div>
+
+            <!--right div, where the guessing takes place -->
+            <div class="right-side">
+
+                <h3 id="instructions">Press any letter to get started!</h3>
+
+                <div class="hint">HINT:
+                    <span id="hint"></span>
+                </div>
+
+                <br>
+
+
+                <div>
+                    <strong>Wins:</strong>
+                </div>
+
+                <br>
+
+                <div id="wins">
+                </div>
+
+                <br>
+
+
+
+                <div>
+                    <strong>Current Word:</strong>
+                </div>
+
+                <br>
+
+                <div id="currentword">
+                </div>
+
+
+                <br>
+
+
+                <div>
+                    <strong>Number of Guesses Remaining:</strong>
+                </div>
+
+                <br>
+
+                <div id="guessremaining">
+                </div>
+
+                <br>
+
+
+                <div>
+                    <strong>Letters Already Guessed:</strong>
+                </div>
+
+                <br>
+
+                <div id="alreadyguessed">
+                </div>
+
+                <br id="break">
+
+                <!--button to press to get a new word -->
+                <center>
+                    <button id="reset" onclick="reset()">New Word</button>
+                </center>
+
+
+            </div>
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>
